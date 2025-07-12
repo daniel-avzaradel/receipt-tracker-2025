@@ -19,6 +19,21 @@ npm install
 npm run dev
 ```
 
+### Environment Variables
+
+Create a `.env.local` file in the root directory with the following variables:
+
+```bash
+# Schematic Configuration
+# Get your publishable key from https://app.schematichq.com/settings/keys
+NEXT_PUBLIC_SCHEMATIC_PUBLISHABLE_KEY=your-actual-schematic-publishable-key-here
+
+# Convex Configuration (if not already set)
+# NEXT_PUBLIC_CONVEX_URL=your-convex-url-here
+```
+
+**Note:** You need to sign up for a Schematic account at [https://app.schematichq.com](https://app.schematichq.com) and get your publishable key from the settings page.
+
 If you're reading this README on GitHub and want to use this template, run:
 
 ```
