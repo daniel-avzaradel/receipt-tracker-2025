@@ -119,4 +119,30 @@
   body {
     @apply bg-background text-foreground;
   }
+  
+  /* Force light theme */
+  html {
+    color-scheme: light;
+  }
+  
+  /* Ensure all elements use light theme */
+  * {
+    color-scheme: light;
+  }
+  
+  /* Override any potential dark mode */
+  html.dark {
+    color-scheme: light !important;
+  }
+  
+  /* Force light theme on all elements */
+  html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, button, input, textarea, select {
+    color-scheme: light !important;
+  }
+  
+  /* Ensure background colors are light */
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
 }
